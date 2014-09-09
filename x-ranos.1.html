@@ -1,0 +1,39 @@
+<template>
+  <style>
+    .name {
+      color:blue;
+      font-weight:bold;
+    }
+  </style>
+  
+  <p>hello world<span class="name">ranos</span></p>
+  
+</template>
+
+
+<script>
+  (function(window, document){
+
+    var elematProto = Object.create(HTMLElement.prototype);
+    console.log("1");
+    var doc = document.currentScript.ownerDocument;
+    console.log("2");
+    var template = doc.querySelector('template').content;
+    console.log("3");
+    console.log("aaaaaa");
+    elematProto.createdCallback = function(){
+            var shadowDom = template.cloneNode(true);
+            
+            var shadowRoot = this.createShadowRoot();
+            shadowRoot.appendChild(shadowDom);
+    };
+    
+    
+    console.log("ssssss");
+    
+    document.registerElement('x-ranos',{
+      prototype: elematProto
+    });
+    
+  })(window, document);
+</script>
