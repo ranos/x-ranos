@@ -1,0 +1,110 @@
+﻿/*リストの・（デフォ）を非表示*/
+ul{
+	list-style-type: none;
+}
+
+.hidden{
+	display: none;
+}
+
+h1{
+	color: #3b0062;
+}
+
+body{
+/*	background-color: #F0E68C;*/
+	margin: auto;	
+}
+
+body, header, footer, section{
+	width: 1100px;
+}	
+	
+header{
+/*	background-color: #87CEFA;
+*/
+}
+
+nav{
+/*	background-color: #98FB98;
+*/
+}
+
+nav ul{
+	text-align: center;
+	padding-right: 40px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+li{
+padding-top: 10px;
+margin-right: 20px;
+float: left;
+
+}
+
+section{
+	height: 600px;
+	padding-left: 25px;
+	padding-top: 10px;
+	color: #404040;
+/*	background-color: #FFA500;
+*/
+}
+
+footer{
+	clear: left;
+/*	background-color: #FF69B4;
+*/
+	position: fixed;
+	bottom: 0;
+	width: 1100px;
+	z-index: 17;
+}
+
+a{
+	text-decoration: none;
+}
+
+section a{
+	color: #4169E1;
+}
+
+h3.contents a{
+	color: #203050;
+}
+
+nav a{
+	color: #8a2be2;
+}
+
+nav a:hover{
+	color: #dc143c;
+	text-decoration:underline overline;
+}
+
+header h1{
+	padding-left: 25px;
+}
+
+div.about, div.contents{
+	padding-bottom: 1px;
+}
+
+#topimg, #hanabi1img{
+	float: right;
+}
+
+section.about, section.contents{
+	padding-top: 10px;
+}
+
+p.about, p.contents{
+	padding-left: 10px;
+}
+
+#hanabi1{
+	height:100px;
+}
